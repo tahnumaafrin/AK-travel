@@ -1,6 +1,38 @@
 body {
   margin: 20px;
 }
+
+/* navbar section */
+
+.nav{
+  margin-bottom: 30px;
+}
+
+.navbar{
+  display: flex;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul{
+  display: flex;
+}
+
+nav li{
+  list-style: none;
+  margin-right: 30px;
+}
+
+nav li a{
+  text-decoration: none;
+}
+
+/* navbar section done */
+
+/* banner section */
 .banner {
   width: 100%;
   height: 630px;
@@ -10,6 +42,7 @@ body {
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+  margin-bottom: 100px;
 }
 
 .header {
@@ -25,14 +58,35 @@ body {
   font-weight: 900;
 }
 
-.input-field {
-  display: flex;
-  height: 30px;
-  padding-top: 15px;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.5;
+.banner-para {
+  color: white;
+  font-size: 15px;
+  padding-bottom: 20px;
 }
+
+.input-field {
+  background-color: white;
+ 
+  border-radius: 10px;
+  height: 70px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+  justify-content: space-evenly;
+}
+
+.banner-btn{
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 
 /* Tour section */
 
@@ -42,6 +96,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 
 .tour-heading {
@@ -107,7 +162,7 @@ p {
   margin-top: 20px;
 }
 .div-3-para {
-  top: 285%;
+  top: 325%;
   left: 17%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -116,7 +171,7 @@ p {
 }
 
 .div-4-para {
-  top: 285%;
+  top: 325%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -125,7 +180,7 @@ p {
 }
 
 .div-5-para {
-  top: 285%;
+  top: 325%;
   left: 82%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -141,7 +196,7 @@ p {
 }
 
 .div-6-para {
-  top: 335%;
+  top: 375%;
   left: 28%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -150,7 +205,7 @@ p {
 }
 
 .div-7-para {
-  top: 335%;
+  top: 375%;
   left: 73%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -163,8 +218,9 @@ p {
 /* choose section */
 
 .choose {
-  margin-top: 60px;
+  margin-top: 90px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .cards {
@@ -221,6 +277,7 @@ p {
   justify-content: space-between;
   gap: 35px;
   margin-top: 45px;
+  margin-top: 80px;
   margin-bottom: 50px;
 }
 
@@ -274,7 +331,7 @@ p {
   background-color: orangered;
   width: 20%;
   font-size: 22px;
-  top: 513%;
+  top: 565%;
   left: 77%;
   transform: rotate(-45deg);
   position: absolute;
@@ -285,53 +342,78 @@ p {
 
 /* newsletter-section done */
 
+/* review section */
+
+.reviews{
+  text-align: center;
+  margin-top: 90px;
+  
+}
+
+.review{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.review-1{
+  background-color: rgb(197, 177, 184);
+  padding: 10px;
+}
+
+.review-2{
+  background-color: rgb(197, 177, 184);
+  padding: 10px;
+}
+
 /* footer section */
-.footer{
+.footer {
   background-color: rgb(221, 221, 221);
   text-align: center;
   height: 500px;
 }
-.footer-details{
+.footer-details {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   padding-top: 120px;
 }
 
-.footer-img{
+.footer-img {
   padding-right: 20px;
 }
 
-.footer-details h1{
+.footer-details h1 {
   font-size: 30px;
 }
 
-.footer-para{
+.footer-para {
   font-size: 15px;
 }
 
-.icons{
-  margin: 20px;
+.icons {
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  /* align-items: center; */
+  /* margin: 20px; */
+  /* margin: 4px; */
   padding-top: 10px;
 }
 
-/* .icon-1{
-  padding-right: 3px;
-} */
 
-.hr-line{
+.hr-line {
   width: 75%;
   margin: auto;
- padding-top: 10px;
- padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-
-.travel{
+.travel {
   color: orangered;
 }
 /* footer-section done */
-
 
 /* responsive for mobile device */
 
