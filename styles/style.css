@@ -221,6 +221,7 @@ p {
   justify-content: space-between;
   gap: 35px;
   margin-top: 45px;
+  margin-bottom: 50px;
 }
 
 .newsletter-details {
@@ -232,7 +233,8 @@ p {
   padding: 58px;
 }
 
-.hr-line {
+.hr-line-2 {
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -270,16 +272,67 @@ p {
 
 .sale {
   background-color: orangered;
-  width: 15%;
-  font-size: 18px;
-  top: 522%;
-  left: 80%;
+  width: 20%;
+  font-size: 22px;
+  top: 513%;
+  left: 77%;
   transform: rotate(-45deg);
   position: absolute;
   padding-left: 20px;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
+
+/* newsletter-section done */
+
+/* footer section */
+.footer{
+  background-color: rgb(221, 221, 221);
+  text-align: center;
+  height: 500px;
+}
+.footer-details{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 120px;
+}
+
+.footer-img{
+  padding-right: 20px;
+}
+
+.footer-details h1{
+  font-size: 30px;
+}
+
+.footer-para{
+  font-size: 15px;
+}
+
+.icons{
+  margin: 20px;
+  padding-top: 10px;
+}
+
+/* .icon-1{
+  padding-right: 3px;
+} */
+
+.hr-line{
+  width: 75%;
+  margin: auto;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+
+.travel{
+  color: orangered;
+}
+/* footer-section done */
+
+
 /* responsive for mobile device */
 
 /* @media screen and (max-width:600px) {
