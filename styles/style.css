@@ -82,7 +82,7 @@ p {
   position: relative;
 }
 
-.div-1-para{
+.div-1-para {
   top: 40%;
   left: 23%;
   transform: translate(-50%, -50%);
@@ -91,7 +91,7 @@ p {
   color: white;
 }
 
-.div-2-para{
+.div-2-para {
   top: 36%;
   left: 73%;
   transform: translate(-50%, -50%);
@@ -106,7 +106,7 @@ p {
   gap: 30px;
   margin-top: 20px;
 }
-.div-3-para{
+.div-3-para {
   top: 285%;
   left: 17%;
   transform: translate(-50%, -50%);
@@ -115,7 +115,7 @@ p {
   color: white;
 }
 
-.div-4-para{
+.div-4-para {
   top: 285%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -124,7 +124,7 @@ p {
   color: white;
 }
 
-.div-5-para{
+.div-5-para {
   top: 285%;
   left: 82%;
   transform: translate(-50%, -50%);
@@ -140,7 +140,7 @@ p {
   margin-top: 20px;
 }
 
-.div-6-para{
+.div-6-para {
   top: 335%;
   left: 28%;
   transform: translate(-50%, -50%);
@@ -149,7 +149,7 @@ p {
   color: white;
 }
 
-.div-7-para{
+.div-7-para {
   top: 335%;
   left: 73%;
   transform: translate(-50%, -50%);
@@ -159,6 +159,58 @@ p {
 }
 
 /* destination section done */
+
+/* choose section */
+
+.choose {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card-1 {
+  background-color: rgb(221, 184, 190);
+  padding-top: 15px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+.card-img-1 {
+  height: 70px;
+  width: 70px;
+}
+.card-2 {
+  background-color: rgb(212, 255, 241);
+  padding-top: 15px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+.card-img-2 {
+  height: 70px;
+  width: 70px;
+}
+
+.card-3 {
+  width: 50%;
+  background-color: rgb(221, 184, 190);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.card-img-3 {
+  height: 70px;
+  width: 70px;
+}
 
 /* responsive for mobile device */
 
