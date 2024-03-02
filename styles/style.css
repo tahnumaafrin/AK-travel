@@ -77,7 +77,7 @@ p {
 .div-1{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  /* gap: 30px; */
 }
 
 .div-2{
