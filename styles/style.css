@@ -212,6 +212,74 @@ p {
   width: 70px;
 }
 
+/* choose section done */
+
+/* newsletter section */
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  margin-top: 45px;
+}
+
+.newsletter-details {
+  width: 100%;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  padding: 58px;
+}
+
+.hr-line {
+  margin-bottom: 20px;
+}
+
+.newsletter-input {
+  display: grid;
+  gap: 15px;
+}
+
+#input-1 {
+  height: 30px;
+  border: none;
+  background-color: rgb(192, 192, 192);
+  border-radius: 5px;
+  padding-left: 16px;
+}
+
+#input-2 {
+  height: 30px;
+  border: none;
+  background-color: rgb(192, 192, 192);
+  border-radius: 5px;
+  padding-left: 16px;
+}
+
+.newsletter-btn {
+  width: 100%;
+  background-color: orangered;
+  border: none;
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sale {
+  background-color: orangered;
+  width: 15%;
+  font-size: 18px;
+  top: 522%;
+  left: 80%;
+  transform: rotate(-45deg);
+  position: absolute;
+  padding-left: 20px;
+  color: white;
+  border-radius: 5px;
+}
 /* responsive for mobile device */
 
 /* @media screen and (max-width:600px) {
