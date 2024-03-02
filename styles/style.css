@@ -68,32 +68,97 @@ p {
 
 /* Tour section done */
 
+/* destination section */
+
 .destination-details {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
 }
 
-.div-1{
+.div-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* gap: 30px; */
+  position: relative;
 }
 
-.div-2{
+.div-1-para{
+  top: 40%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+
+.div-2-para{
+  top: 36%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+
+.div-2 {
   display: grid;
-  /* flex: 1; */
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 20px;
 }
+.div-3-para{
+  top: 285%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
 
-.div--3{
+.div-4-para{
+  top: 285%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+
+.div-5-para{
+  top: 285%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+
+.div--3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-top: 20px;
 }
+
+.div-6-para{
+  top: 335%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+
+.div-7-para{
+  top: 335%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+
+/* destination section done */
 
 /* responsive for mobile device */
 
