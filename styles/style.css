@@ -84,31 +84,32 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 22px;
+  padding-top: 12px;
   justify-content: space-evenly;
   background-color: white;
-
   border-radius: 10px;
+
 }
 
-.input-2{
+.input-2 {
   position: relative;
 }
 
-.input-2 i{
+.input-2 i {
   position: absolute;
   left: 15px;
   top: 40px;
   color: gray;
 }
 
-
 .banner-btn {
+  height: auto;
   background-color: orangered;
-  /* color: white; */
+  color: white;
   border: none;
   border-radius: 5px;
-  padding: 5px;
+  padding: 15px;
+  width: 100%;
 }
 
 /* Tour section */
@@ -412,7 +413,7 @@ p {
 }
 
 .footer-details h1 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .footer-para {
@@ -421,11 +422,7 @@ p {
 
 .icons {
   display: flex;
-  /* justify-content: space-evenly; */
   justify-content: center;
-  /* align-items: center; */
-  /* margin: 20px; */
-  /* margin: 4px; */
   padding-top: 10px;
 }
 
@@ -444,6 +441,8 @@ p {
 /* responsive for mobile device */
 
 @media (max-width: 600px) {
+
+  
   .nav-ul {
     position: absolute;
     top: -1000px;
@@ -464,6 +463,10 @@ p {
     /* color: var(--text-color); */
   }
 
+  #menu-icon{
+    display: block;
+  }
+
   .footer-img {
     height: 40px;
     width: 40px;
@@ -473,38 +476,38 @@ p {
     font-size: 15px;
   }
 
-  /* .banner {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  } */
+  .header{
+   margin-top: -120px;
+   margin-right: 90px;
+  }
 
   .banner {
     width: 100%;
-    height: auto;
     max-width: 100%;
+    border-radius: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url("group-13.png");
-    background-size: cover;
-    background-position: center;
-    /* position: relative; */
-    background-repeat: no-repeat;
-    /* margin-bottom: 100px; */
   }
 
   .banner-heading {
     font-size: 30px;
   }
 
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   padding-bottom: 20px;
+  }
+
   .tours {
     width: 100%;
     height: 100%;
     display: flex;
-    /* justify-content: space-between; */
     margin-top: 30px;
     margin-bottom: 10px;
     flex-direction: column;
-  }
+    }
 
   .tour-heading {
     margin-bottom: 20px;
@@ -514,10 +517,6 @@ p {
     height: auto;
     width: 100%;
     max-width: 100%;
-  }
-  .inputs {
-    display: flex;
-    flex-direction: column;
   }
 
   .div-1 {
@@ -529,6 +528,7 @@ p {
     height: auto;
     width: 100%;
     max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .div-1-para {
@@ -558,10 +558,11 @@ p {
     height: auto;
     width: 100%;
     max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .div-3-para {
-    top: 335%;
+    top: 435%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -570,7 +571,7 @@ p {
   }
 
   .div-4-para {
-    top: 382%;
+    top: 480%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -579,7 +580,7 @@ p {
   }
 
   .div-5-para {
-    top: 440%;
+    top: 536%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -596,10 +597,11 @@ p {
     height: auto;
     width: 100%;
     max-width: 100%;
+    margin-bottom: 20px;
   }
 
   .div-6-para {
-    top: 495%;
+    top: 596%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -608,7 +610,7 @@ p {
   }
 
   .div-7-para {
-    top: 535%;
+    top: 632%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -654,7 +656,7 @@ p {
     background-color: orangered;
     width: 20%;
     font-size: 12px;
-    top: 858%;
+    top: 949%;
     left: 67%;
     transform: rotate(-45deg);
     position: absolute;
@@ -669,4 +671,9 @@ p {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
+
+  .footer-details h1 {
+    margin-top: 6px;
+  }
+  
 }
