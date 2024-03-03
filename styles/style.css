@@ -4,11 +4,11 @@ body {
 
 /* navbar section */
 
-.nav{
+.nav {
   margin-bottom: 30px;
 }
 
-.navbar{
+.navbar {
   display: flex;
   font-size: 20px;
 }
@@ -17,17 +17,26 @@ nav {
   justify-content: space-between;
 }
 
-nav > ul{
+nav > ul {
   display: flex;
 }
 
-nav li{
+nav li {
   list-style: none;
   margin-right: 30px;
 }
 
-nav li a{
+nav li a {
   text-decoration: none;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
 }
 
 /* navbar section done */
@@ -66,7 +75,7 @@ nav li a{
 
 .input-field {
   background-color: white;
- 
+
   border-radius: 10px;
   height: 70px;
 }
@@ -77,16 +86,30 @@ nav li a{
   align-items: center;
   padding-top: 22px;
   justify-content: space-evenly;
+  background-color: white;
+
+  border-radius: 10px;
 }
 
-.banner-btn{
+.input-2{
+  position: relative;
+}
+
+.input-2 i{
+  position: absolute;
+  left: 15px;
+  top: 40px;
+  color: gray;
+}
+
+
+.banner-btn {
   background-color: orangered;
-  color: white;
+  /* color: white; */
   border: none;
   border-radius: 5px;
   padding: 5px;
 }
-
 
 /* Tour section */
 
@@ -134,6 +157,8 @@ p {
 .div-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* gap: 20px; */
+  text-align: center;
   position: relative;
 }
 
@@ -158,11 +183,12 @@ p {
 .div-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  /* gap: 30px; */
   margin-top: 20px;
+  text-align: center;
 }
 .div-3-para {
-  top: 325%;
+  top: 310%;
   left: 17%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -171,7 +197,7 @@ p {
 }
 
 .div-4-para {
-  top: 325%;
+  top: 310%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -180,7 +206,7 @@ p {
 }
 
 .div-5-para {
-  top: 325%;
+  top: 310%;
   left: 82%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -191,13 +217,13 @@ p {
 .div--3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  /* gap: 30px; */
   margin-top: 20px;
 }
 
 .div-6-para {
-  top: 375%;
-  left: 28%;
+  top: 358%;
+  left: 20%;
   transform: translate(-50%, -50%);
   position: absolute;
   font-size: 40px;
@@ -205,7 +231,7 @@ p {
 }
 
 .div-7-para {
-  top: 375%;
+  top: 358%;
   left: 73%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -331,8 +357,8 @@ p {
   background-color: orangered;
   width: 20%;
   font-size: 22px;
-  top: 565%;
-  left: 77%;
+  top: 540%;
+  left: 76%;
   transform: rotate(-45deg);
   position: absolute;
   padding-left: 20px;
@@ -344,27 +370,28 @@ p {
 
 /* review section */
 
-.reviews{
+.reviews {
   text-align: center;
   margin-top: 90px;
-  
 }
 
-.review{
+.review {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.review-1{
+.review-1 {
   background-color: rgb(197, 177, 184);
   padding: 10px;
+  border-radius: 5px;
 }
 
-.review-2{
+.review-2 {
   background-color: rgb(197, 177, 184);
   padding: 10px;
+  border-radius: 5px;
 }
 
 /* footer section */
@@ -402,7 +429,6 @@ p {
   padding-top: 10px;
 }
 
-
 .hr-line {
   width: 75%;
   margin: auto;
@@ -417,6 +443,230 @@ p {
 
 /* responsive for mobile device */
 
-/* @media screen and (max-width:600px) {
-  
-} */
+@media (max-width: 600px) {
+  .nav-ul {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* background: var(--bg-color); */
+    text-align: left;
+    transition: all 0.45s ease;
+  }
+
+  .nav-ul li a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all 0.45s ease;
+    /* color: var(--text-color); */
+  }
+
+  .footer-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .nav-heading {
+    font-size: 15px;
+  }
+
+  /* .banner {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  } */
+
+  .banner {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("group-13.png");
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    background-repeat: no-repeat;
+    /* margin-bottom: 100px; */
+  }
+
+  .banner-heading {
+    font-size: 30px;
+  }
+
+  .tours {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+
+  .tour-heading {
+    margin-bottom: 20px;
+  }
+
+  .tour-img img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .div-1 img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .div-1-para {
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+  }
+
+  .div-2-para {
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+  }
+
+  .div-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .div-2 img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .div-3-para {
+    top: 335%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+  }
+
+  .div-4-para {
+    top: 382%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+  }
+
+  .div-5-para {
+    top: 440%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+  }
+
+  .div--3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .div--3 img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .div-6-para {
+    top: 495%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+  }
+
+  .div-7-para {
+    top: 535%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-3 {
+    width: auto;
+    background-color: rgb(221, 184, 190);
+    padding-top: 15px;
+    padding-left: 20px;
+    border-radius: 10px;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 45px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .newsletter-details {
+    width: auto;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 58px;
+  }
+  .newsletter-sale img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sale {
+    background-color: orangered;
+    width: 20%;
+    font-size: 12px;
+    top: 858%;
+    left: 67%;
+    transform: rotate(-45deg);
+    position: absolute;
+    padding-left: 20px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .review {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}

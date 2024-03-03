@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AK-travel</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-    </style>
     <script
       src="https://kit.fontawesome.com/1e4e020e43.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+    </style>
   </head>
   <body>
     <!-- navbar section -->
@@ -19,15 +19,16 @@
       <nav class="nav">
         <div class="navbar">
           <img class="footer-img" src="Images/Group 40071 (2).png" alt="" />
-          <h1>AK <span class="travel">Travel</span></h1>
+          <h1 class="nav-heading">AK <span class="travel">Travel</span></h1>
         </div>
-        <ul>
+        <ul class="nav-ul">
           <li><a href="">Home</a></li>
           <li><a href="">packages</a></li>
           <li><a href="">Testimonial</a></li>
           <li><a href="">Blog</a></li>
           <li><a href="">Contact</a></li>
         </ul>
+        <div id="menu-icon" class="fa-solid fa-bars"></div>
       </nav>
     </section>
     <!-- navbar section done -->
@@ -55,14 +56,15 @@
               <div class="input-2">
                 <input type="text" placeholder="When" name="" id="" />
                 <!-- <i class="fa-light fa-angle-down"></i> -->
+                <!-- <i class="fa-solid fa-angle-down"></i> -->
               </div>
-              <div>
+              <div class="input-3">
                 <input type="text" placeholder="Select Type" name="" id="" />
+                <!-- <i class="fa-light fa-angle-down"></i> -->
               </div>
-              <div>
-                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-
-                <button class="banner-btn">Find Now</button>
+              <div class="banner-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button>Find Now</button>
               </div>
             </div>
           </div>
@@ -121,7 +123,7 @@
           </div>
           <div>
             <div class="div-1">
-              <div>
+              <div class="maldives">
                 <p class="div-1-para">Maldives</p>
                 <img src="Images/Rectangle 5.png" alt="" />
               </div>
@@ -146,12 +148,12 @@
             </div>
             <div class="div--3">
               <div>
-                <p class="div-6-para">Bangladesh</p>
-                <img src="Images/Rectangle 10.png" alt="" />
+                <p class="div-6-para">Bandarban</p>
+                <img src="Images/Rectangle 11.png" alt="" />
               </div>
               <div>
-                <p class="div-7-para">Bandarban</p>
-                <img src="Images/Rectangle 11.png" alt="" />
+                <p class="div-7-para">Bangladesh</p>
+                <img src="Images/Rectangle 10.png" alt="" />
               </div>
             </div>
           </div>
@@ -304,10 +306,19 @@
             </p>
           </div>
           <div class="icons">
-            <i style="margin-right: 10px;" class="fa-brands fa-twitter fa-2x"></i>
-            <i style="margin-right: 10px;" class="fa-brands fa-facebook fa-2x"></i>
-            <i style="margin-right: 10px;" class="fa-brands fa-square-instagram fa-2x"></i>
-            <i style="margin-right: 10px;" class="fa-brands fa-github fa-2x"></i>
+            <i
+              style="margin-right: 10px"
+              class="fa-brands fa-twitter fa-2x"
+            ></i>
+            <i
+              style="margin-right: 10px"
+              class="fa-brands fa-facebook fa-2x"
+            ></i>
+            <i
+              style="margin-right: 10px"
+              class="fa-brands fa-square-instagram fa-2x"
+            ></i>
+            <i style="margin-right: 10px" class="fa-brands fa-github fa-2x"></i>
           </div>
           <div class="hr-line">
             <div><hr /></div>
